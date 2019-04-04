@@ -56,15 +56,10 @@ public class CinetPayViewController: UIViewController, WKScriptMessageHandler, W
         
         webView.navigationDelegate = self
         
-        let frameworkBundle = Bundle(for: self.classForCoder)
-        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("SDKCinetPay.bundle")
-        let resourceBundle = Bundle(url: bundleURL!)
-        
-        if let url = resourceBundle?.url(forResource: "cinetpay", withExtension: "html", subdirectory: "assets") {
-            webView.loadFileURL(url, allowingReadAccessTo: url)
-            let request = URLRequest(url: url)
-            webView.load(request)
-        }
+        let url = Bundle(for: type(of: self)).url(forResource: "cinetpay", withExtension: "html", subdirectory: nil)!
+        webView.loadFileURL(url, allowingReadAccessTo: url)
+        let request = URLRequest(url: url)
+        webView.load(request)
         
     }
     

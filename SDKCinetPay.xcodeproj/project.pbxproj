@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		6A5024BF22551F66001331A9 /* SDKCinetPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A5024BD22551F66001331A9 /* SDKCinetPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A5024C6225520A5001331A9 /* CinetPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5024C5225520A5001331A9 /* CinetPayViewController.swift */; };
-		6A5024C822552220001331A9 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5024C722552220001331A9 /* assets */; };
+		6AC170E12256725200BD5504 /* success.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC170DD2256725100BD5504 /* success.svg */; };
+		6AC170E22256725200BD5504 /* cinetpay.html in Resources */ = {isa = PBXBuildFile; fileRef = 6AC170DE2256725100BD5504 /* cinetpay.html */; };
+		6AC170E32256725200BD5504 /* cancel.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6AC170DF2256725100BD5504 /* cancel.svg */; };
+		6AC170E42256725200BD5504 /* cinetpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC170E02256725100BD5504 /* cinetpay.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +20,10 @@
 		6A5024BD22551F66001331A9 /* SDKCinetPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKCinetPay.h; sourceTree = "<group>"; };
 		6A5024BE22551F66001331A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A5024C5225520A5001331A9 /* CinetPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinetPayViewController.swift; sourceTree = "<group>"; };
-		6A5024C722552220001331A9 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		6AC170DD2256725100BD5504 /* success.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = success.svg; sourceTree = "<group>"; };
+		6AC170DE2256725100BD5504 /* cinetpay.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cinetpay.html; sourceTree = "<group>"; };
+		6AC170DF2256725100BD5504 /* cancel.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cancel.svg; sourceTree = "<group>"; };
+		6AC170E02256725100BD5504 /* cinetpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cinetpay.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,10 @@
 		6A5024BC22551F66001331A9 /* SDKCinetPay */ = {
 			isa = PBXGroup;
 			children = (
-				6A5024C722552220001331A9 /* assets */,
+				6AC170DF2256725100BD5504 /* cancel.svg */,
+				6AC170DE2256725100BD5504 /* cinetpay.html */,
+				6AC170E02256725100BD5504 /* cinetpay.png */,
+				6AC170DD2256725100BD5504 /* success.svg */,
 				6A5024BD22551F66001331A9 /* SDKCinetPay.h */,
 				6A5024BE22551F66001331A9 /* Info.plist */,
 				6A5024C5225520A5001331A9 /* CinetPayViewController.swift */,
@@ -127,7 +136,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A5024C822552220001331A9 /* assets in Resources */,
+				6AC170E22256725200BD5504 /* cinetpay.html in Resources */,
+				6AC170E12256725200BD5504 /* success.svg in Resources */,
+				6AC170E42256725200BD5504 /* cinetpay.png in Resources */,
+				6AC170E32256725200BD5504 /* cancel.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
