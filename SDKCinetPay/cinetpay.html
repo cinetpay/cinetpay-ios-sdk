@@ -196,6 +196,9 @@
                 
                 if (paymentInfo.cpm_error_message === "User Cancel Payment") {
                         
+                    document.getElementById("info_text").textContent = "Paiement annulé"
+                    document.getElementById("terminate_failed").style.display = "none"
+                        
                     window.webkit.messageHandlers.dismiss.postMessage("");
                         
                 } else if (paymentInfo.cpm_result === "00") {
