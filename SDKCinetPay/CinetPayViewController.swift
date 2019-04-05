@@ -22,7 +22,7 @@ public class CinetPayViewController: UIViewController, WKScriptMessageHandler, W
     
     var webView: WKWebView!
     
-    public var amount: String?
+    public var amount: Int?
     public var apiKey: String?
     public var siteId: Int?
     public var notifyURL: String?
@@ -115,7 +115,7 @@ public class CinetPayViewController: UIViewController, WKScriptMessageHandler, W
     
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
-        var amt = "100"
+        var amt = 100
         var api_key = ""
         var site_id = 0
         var notify_url = ""
@@ -161,7 +161,7 @@ public class CinetPayViewController: UIViewController, WKScriptMessageHandler, W
             cus = custom
         }
         
-        webView.evaluateJavaScript("init('\(amt)', '\(api_key)', \(site_id), '\(notify_url)', \(should_check_payment), '\(trans_id)', '\(cur)', '\(des)', '\(cus)')", completionHandler: nil)
+        webView.evaluateJavaScript("init(\(amt), '\(api_key)', \(site_id), '\(notify_url)', \(should_check_payment), '\(trans_id)', '\(cur)', '\(des)', '\(cus)')", completionHandler: nil)
     }
     
 }
